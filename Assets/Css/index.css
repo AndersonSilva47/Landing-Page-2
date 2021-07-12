@@ -1,0 +1,79 @@
+:root {
+    --pgap: 2rem;
+    --mgap: 4rem;
+    --ggap: 6rem;
+    --xgap: 8rem;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-area {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.menu-gap {
+    height: 8rem;
+    width: 100%;
+    background-color: yellow;
+}
+
+/*************MENU**************/
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: red;
+}
+
+.icon-area {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    align-items: center;
+}
+
+.center {
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+li img {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+/****************FAKE*************************/
+
+.one {
+    min-height: 100vh;
+    background-color: rosybrown;
+}
+
+.two {
+    min-height: 100vh;
+    background-color: saddlebrown;
+}
+
