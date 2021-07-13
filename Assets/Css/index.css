@@ -3,7 +3,6 @@
     --mgap: 4rem;
     --ggap: 6rem;
     --xgap: 8rem;
-
 }
 
 * {
@@ -14,16 +13,34 @@
 
 html {
     font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.main-area-menu {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.main-area-promo {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .main-area {
-    max-width: 120rem;
+    max-width: 110rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 2rem;
 }
 
 .menu-gap {
-    height: 8rem;
+    height: 9rem;
     width: 100%;
     background-color: yellow;
 }
@@ -36,33 +53,146 @@ html {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: red;
+    background-color: white;
+    align-items: center;
+    border-bottom: 0.15rem solid #ccc;
+}
+
+.menu-area {
+    display: flex;
+    align-items: center;
 }
 
 .icon-area {
     display: flex;
     position: absolute;
     text-align: center;
-    top: 2rem;
+    font-size: 2rem;
+    top: 3.5rem;
 }
 
-h1 {
-    font-size: 3rem;
-    align-items: center;
+.logo-site {
+    font-size: 3.5rem;
+    margin: 2.5rem auto;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+
+.color-name {
+    color: #28a745;
+}
+
+.r {
+    position: absolute;
+    font-size: 1rem;
+    top: 3.2rem;
 }
 
 .center {
-    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+
+/****************promotion*************************/
+
+.promotion {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.promotion div {
+    border-collapse: collapse;
+    display: flex;
+    border: 0.15rem solid #ccc;
+    height: 7rem;
     align-items: center;
-    justify-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
-li img {
-    width: 5rem;
-    height: 5rem;
+.promotion div p {
+    height: 100%;
+    width: 100%;
 }
 
+.white-area {
+    width: 100%;
+    height: 8rem;
+}
+
+/****************section one*************************/
+
+.section1 {
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--ggap);
+}
+
+.img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.img img {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.hot-noticies {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hot-noticies p {
+    font-size: 1.5rem;
+}
+
+.sec02 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.minor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minor-img img {
+    width: 100%;
+}
+
+.minor-mat {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: var(--pgap);
+}
+
+.minor-mat h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    
+}
+
+.minor-mat p {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
 
 
 /****************FAKE*************************/
@@ -76,4 +206,3 @@ li img {
     min-height: 100vh;
     background-color: saddlebrown;
 }
-
